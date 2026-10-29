@@ -31,6 +31,12 @@ olarak öğrenmek amacıyla hazırlanmıştır.
 
 [Web Sitesini Görüntüle](https://emirhanozcan-dev.github.io/Bilgisayar-programciligi-ogrenci-sayfasi/)
 
+
+## 📸 Ekran Görüntüsü
+
+![Web sitesinin ekran görüntüsü](ekran-goruntusu.png)
+
+
 ## Projeyi Çalıştırma
 
 1. Repository dosyalarını indirin.
