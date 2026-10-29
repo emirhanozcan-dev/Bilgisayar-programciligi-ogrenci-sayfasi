@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tarayıcı sekmesinde görünen başlık -->
+     <title>Bilgisayar Programcılığı | Öğrenci Sayfası</title>
+
+     <!-- Sayfanın içeriğini özetleyen açıklama-->
+      <meta name="description"
+            content="Bilgisayar Programcılığı öğrencileri için dersler,
+            çalışma adımları ve web tasarımı etkinlik formu.">
+
+    <!--Görsel düzen için temel CSS-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181B1F;
+            color: #E65C00;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header, nav, main, footer {
+          padding: 20px;
+        }
+
+        body > header, body >footer{
+            background-color: #243247;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        nav{
+            background-color: #dce7f3;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 8px;
+            color: #173e78;
+        }
+        
+        main{
+            max-width: 950px;
+            margin: auto;
+        }
+
+        section, aside {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .vurgu{
+            color: #a52525;
+            font-weight: bold;
+        }
+        
+        img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,td{
+            border: 1px solid #bac6d3;
+            padding: 10px;
+        }
+
+        th{
+            background-color: #dce7f3;
+        }
+
+        fieldset{
+            margin-bottom: 15px;
+            border: 1px solid #bac6d3;
+        }
+
+        .alan{
+            display: block;
+            margin-top: 12px;
+        }
+
+        input[type="text"], input[type="email"],
+        select, textarea{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 8px;
+        }
+
+        button{
+            padding: 10px 18px;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+
+        pre{
+            background-color: #edf2f7;
+            padding: 15px;
+            overflow-x: auto;
+        }
+        
+        body > header {
+            position: relative;
+        }
+
+        .okul-logo {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            width: 80px;
+            height: auto;
+            border-radius: 0;
+        }
+    </style>    
+</head>
+
+<body id="ust">
+    <!--HEADER: Sayfanın tanıtım bölümü-->
+    <header>
+        <img
+            class="okul-logo"
+            src="https://ubys.kastamonu.edu.tr/AIS/ETC/GTS/PublicFiles/0006B2B4EE5699986E61078E89DEC1B7B22330174C5C950EED50CC05E72E8CFA.png"
+            alt="Kastamonu Üniversitesi Logo">
+
+        <h1>Bilgisayar Programcılığı Öğrenci Sayfası</h1>
+        <p>Web Tasarımı Temelleri Uygulaması</p>
+    </header>
+
+    <!--NAV: Sayfa içi bağlantılar ve yer işaretleri-->
+    <nav aria-label="Ana menü">
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#dersler">Dersler</a>
+        <a href="#calisma">Çalışma Planı</a>
+        <a href="#kayit">Etkinlik Kaydı</a>
+    </nav>
+    
+    <!--MAIN: Sayfanın temel içeriği-->
+    <main>
+        <section id="hakkimizda">
+            <h2>Bölümümüz Hakkında</h2>
+
+            <p>
+                <strong>Bilgisayar Programcılığı</strong> bölümde yazılım geliştirme ve <em>problem çözme</em>
+                becerileri kazanıyoruz.
+            </p>
+
+            <p>Bu sayfa<b> HTML etiketlerini</b> öğrenmek için hazırlanmıştır.
+            <br>
+            Amacımız <mark>uygulayarak öğrenmek</mark> ve <u>düzenli çalışmaktır</u>.
+            </p>
+
+            <p>
+                <i>Her büyük proje küçük bir kod satırıyla başlar.</i>
+            </p>
+
+            <p>
+                Etkinlik tarihi:
+                <del>12 Kasım</del>
+                <ins>19 Kasım</ins>
+            </p>
+
+            <p>
+                <small>Bu sayfadaki bilgiler ders uygulaması için örnektir.</small>
+            </p>
+
+            <hr>
+
+            <!--FIGURE: Görsel ve görsel açıklaması-->
+            <figure>
+                <img src="https://catalzeytin.kastamonu.edu.tr/images/dcc3b5e9-1053-48e2-a929-4ff1b55d1b5a.jpg"
+                    alt="Üniversite kampüsündeki eğitim binası"
+                    width="600"
+                    height="400">
+                <figcaption>
+                    Kampüsümüzden bir görünüm.
+                </figcaption>
+
+            </figure>
+
+            <p>
+                <a href="https://catalzeytin.kastamonu.edu.tr/"
+                target="_blank"
+                rel="noopener noreferrer">
+                 Kastamonu Üniversitesi web sitesini ziyaret et    
+                </a>
+            </p>
+        </section>
+
+        <section id="dersler">
+            <h2>Derslerimiz</h2>
+
+            <!--Sırasız liste-->
+            <h3>Bu Dönem Öğrendiğimiz Konular</h3>
+            <ul>
+                <li>Web Tasarımı Temelleri</li>
+                <li>Programlama Temelleri</li>
+                <li>Veri Tabanı</li>
+            </ul>
+
+            <!--Tablo-->
+            <h3>Örnek Ders Programı</h3>
+            <table>
+                <caption>Haftalık Ders Programı</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Gün</th>
+                        <th scope="col">Ders</th>
+                        <th scope="col">Saat</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Pazartesi</td>
+                        <td>Web Tasarımı</td>
+                        <td>09.00-11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Salı</td>
+                        <td>Programlama</td>
+                        <td>10.00-12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Perşembe</td>
+                        <td>Veri Tabanı</td>
+                        <td>13.00-15.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="calisma">
+            <h2>Çalışma Planı</h2>
+
+            <!--Sıralı Liste-->
+            <h3>Bir Web Sayfası Hazırlama Adımları</h3>
+            <ol>
+                <li>Proje klasörünü oluştur.</li>
+                <li>index.html dosyasını oluştur.</li>
+                <li>HTML iskeletini yaz.</li>
+                <li>İçerikleri ekle ve tarayıcıda kontrol et.</li>
+            </ol>
+
+            <h3>Üçüncü Adımdan Devam Eden Liste</h3>
+            <ol start="3">
+                <li>Başlıkları ekle.</li>
+                <li>Paragrafları düzenle.</li>
+            </ol>
+
+            <h3>Yayın Öncesi Geri Sayım</h3>
+            <ol reversed>
+                <li>Bağlantıları kontrol et.</li>
+                <li>Görselleri kontrol et.</li>
+                <li>Sayfayı aç.</li>
+            </ol>
+
+            <h3>Roma Rakamlarıyla Konular </h3>
+            <ol type="I">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <!--Article: Bağımsız okunabilen içerik.-->
+            <article>
+                <header>
+                    <h3>HTML Öğrenirken Küçük Bir İpucu</h3>
+                </header>
+                <p>
+                    Etiketleri ezberlemek yerine
+                    <span class="vurgu">her etiketi bir örnekte kullanın.</span>
+                    Paragraf yazmak için <code>&lt;p&gt;</code> kullanılır.
+                </p>
+
+                <!--PRE: Boşlukları ve satırları korur-->
+                <pre><code>&lt;h1&gt;Merhaba Dünya&lt;/h1&gt;&lt;p&gt;İlk web sayfamı hazırlıyorum.&lt;/p&gt;</code></pre>
+
+                <p>
+                    Alt simge: H<sub>2</sub>0
+                    <br>
+                    Üst simge: 2<sup>3</sup> = 8
+                </p>
+
+                <footer>
+                    <small>Hazırlayan: Muhammet Emirhan Özcan</small>
+                </footer>
+            </article>
+        </section>
+
+        <!--ASIDE: ANA İÇERİĞİ DESTEKLEYEN EK BİLGİ-->
+        <aside>
+            <h2>Hatırlatma</h2>
+            <p>
+                Dosyayı değiştirdikten sonra <strong>Ctrl+S</strong> ile kaydedin ve tarayıcıyı yenileyin.
+            </p>
+        </aside>
+
+        <section id="kayit">
+            <h2>Web Tasarımı Etkinlik Formu</h2>
+
+            <p>
+                Bu form HTML giriş alanlarını denemek içindir.
+                Bilgiler kaydedilmez veya bir sunucuya gönderilmez.
+            </p>
+
+            <form onsubmit="event.preventDefault();
+                document.getElementById('form-sonuc').textContent = 'Form doğrulandı. Bu bir ders örneğidir; kayıt yapılmadı.';">
+
+                <label class="alan" for="adsoyad">Adınız ve soyadınız:</label>
+                <input type="text"
+                    id="adsoyad"
+                    name="adsoyad"
+                    placeholder="Örnek: Ayşe Yılmaz"
+                    required>
+                
+                <label class="alan" for="email">E-posta adresiniz:</label>
+                <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ornek@example.com"
+                    required>
+                
+                <label class="alan" for="sinif">Sınıfınız:</label>
+                <select id="sinif" name="sinif" required>
+                    <option value="">Seçiniz</option>
+                    <option value="1">1. Sınıf</option>
+                    <option value="2">2. Sınıf</option>
+                </select>
+
+                <fieldset>
+                    <legend>Katılım Biçiminiz</legend>
+
+                    <input type="radio"
+                           id ="yuzyuze"
+                           name="katilim"
+                           value="yuzyuze"
+                           required>
+                    <label for="yuzyuze">Yüz yüze</label>
+
+                    <input type="radio"
+                           id ="cevrimiçi"
+                           name="katilim"
+                           value="cevrimiçi">
+                    <label for="cevrimiçi">Çevrimiçi</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>İlgilendiğiniz Konular</legend>
+
+                    <input type="checkbox"
+                            id ="html"
+                            name="konular"
+                            value="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox"
+                            id ="css"
+                            name="konular"
+                            value="css">
+                    <label for="css">CSS</label>
+                </fieldset>
+
+                <label class="alan" for="mesaj">Beklentileriniz:</label>
+                <textarea id="mesaj"
+                          name="mesaj"
+                          rows="4"
+                          placeholder="Etkinlikte neler öğrenmek istersiniz?"></textarea>
+                
+                <button type="submit">Formu Kontrol Et</button>
+                <button type="reset"
+                        onclick="document.getElementById('form-sonuc').textContent = '';">
+                    Formu Temizle
+                </button>
+
+                <p id="form-sonuc" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Tasarımı Temelleri - Sınıf Uygulaması</p>
+        <a href="#ust" style="color: white;">Sayfanın başına dön</a>
+    </footer>
+
+</body>
+</html>
