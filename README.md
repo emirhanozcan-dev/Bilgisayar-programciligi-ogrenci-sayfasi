@@ -27,6 +27,10 @@ olarak öğrenmek amacıyla hazırlanmıştır.
 - Etkinlik kayıt formu
 - CSS ile sayfa tasarımı
 
+## 🌐 Canlı Demo
+
+[Web Sitesini Görüntüle](https://emirhanozcan-dev.github.io/Bilgisayar-programciligi-ogrenci-sayfasi/)
+
 ## Projeyi Çalıştırma
 
 1. Repository dosyalarını indirin.
